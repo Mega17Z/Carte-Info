@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+}
+
+.container{
+    background-color: hsl(0, 0%, 100%);
+    width: 620px;
+    margin: 70px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 10px;
+}
+
+.container .image{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+.container .content{
+    width: 100%;
+    padding: 30px 20px;
+}
+
+.content h2{
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 5px 0;
+    color: hsl(228, 12%, 48%);
+    font-family: "Montserrat";
+    font-weight: 400;
+}
+
+.content h1{
+    font-size: 2.6rem;
+    line-height: 2.6rem;
+    margin: 15px 0;
+    color: hsl(212, 21%, 14%);
+    font-family: "Fraunces";
+    font-weight: bolder;
+}
+
+.content p{
+    font-size: 16px;
+    margin: 15px 0;   
+    width: 100%;
+    color: hsl(228, 12%, 48%);
+    font-family: "Montserrat";
+    font-weight: 500;
+}
+
+.content h3{
+    font-size: 2.4rem;
+    display: flex;
+    align-items: center;
+    margin: 25px 0;
+    color: hsl(158, 36%, 37%);
+}
+
+h3 s{
+    font-size: 17px;
+    padding-left: 25px;
+    color: hsl(228, 12%, 48%);
+    font-family: "Montserrat";
+    font-weight: 400;
+}
+
+.content button{
+    font-size: 18px;
+    width: 95%;
+    padding: 15px;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button i{
+    padding-right: 15px;
+}
+@media (max-width: 500px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+    }
+
+    .image img{
+        height: 55vh;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .content h1{
+        width: 90%;
+    }
+
+    .content p{
+        width: 89%;
+    }
+}
